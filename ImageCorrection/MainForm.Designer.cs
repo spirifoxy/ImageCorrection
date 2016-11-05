@@ -160,7 +160,7 @@
         private System.Windows.Forms.ToolStripMenuItem brightnessContrastToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem invertToolStripMenuItem;
         private System.Windows.Forms.Panel imagePanel;
-        private System.Windows.Forms.PictureBox imagePB;
+        public System.Windows.Forms.PictureBox imagePB;
     }
 }
 

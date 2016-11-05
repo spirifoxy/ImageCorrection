@@ -51,6 +51,7 @@ namespace ImageCorrection
         private void brightnessContrastToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var brightContrastForm = new BrightContrastForm();
+            brightContrastForm.Owner = this;
             brightContrastForm.ShowDialog();
         }
     }
