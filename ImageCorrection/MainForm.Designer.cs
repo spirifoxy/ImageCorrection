@@ -36,8 +36,10 @@
             this.correctionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.brightnessContrastToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.invertToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.grayscaleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imagePanel = new System.Windows.Forms.Panel();
             this.imagePB = new System.Windows.Forms.PictureBox();
+            this.binarizationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.imagePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imagePB)).BeginInit();
@@ -75,7 +77,7 @@
             // 
             this.saveToolStripMenuItem.Enabled = false;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.saveToolStripMenuItem.Text = "Save";
             // 
             // exitToolStripMenuItem
@@ -89,7 +91,9 @@
             // 
             this.correctionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.brightnessContrastToolStripMenuItem,
-            this.invertToolStripMenuItem});
+            this.invertToolStripMenuItem,
+            this.grayscaleToolStripMenuItem,
+            this.binarizationToolStripMenuItem});
             this.correctionToolStripMenuItem.Enabled = false;
             this.correctionToolStripMenuItem.Name = "correctionToolStripMenuItem";
             this.correctionToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
@@ -107,6 +111,14 @@
             this.invertToolStripMenuItem.Name = "invertToolStripMenuItem";
             this.invertToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.invertToolStripMenuItem.Text = "Invert";
+            this.invertToolStripMenuItem.Click += new System.EventHandler(this.invertToolStripMenuItem_Click);
+            // 
+            // grayscaleToolStripMenuItem
+            // 
+            this.grayscaleToolStripMenuItem.Name = "grayscaleToolStripMenuItem";
+            this.grayscaleToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.grayscaleToolStripMenuItem.Text = "Grayscale";
+            this.grayscaleToolStripMenuItem.Click += new System.EventHandler(this.grayscaleToolStripMenuItem_Click);
             // 
             // imagePanel
             // 
@@ -126,6 +138,13 @@
             this.imagePB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imagePB.TabIndex = 0;
             this.imagePB.TabStop = false;
+            // 
+            // binarizationToolStripMenuItem
+            // 
+            this.binarizationToolStripMenuItem.Name = "binarizationToolStripMenuItem";
+            this.binarizationToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.binarizationToolStripMenuItem.Text = "Binarization";
+            this.binarizationToolStripMenuItem.Click += new System.EventHandler(this.binarizationToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -161,6 +180,8 @@
         private System.Windows.Forms.ToolStripMenuItem invertToolStripMenuItem;
         private System.Windows.Forms.Panel imagePanel;
         public System.Windows.Forms.PictureBox imagePB;
+        private System.Windows.Forms.ToolStripMenuItem grayscaleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem binarizationToolStripMenuItem;
     }
 }
 
